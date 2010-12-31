@@ -1,0 +1,17 @@
+ ---
+ Frequently Asked Questions
+ ---
+ Brent Atkinson
+ ---
+ 2009-11-12
+
+Frequently Asked Questions
+
+ The following are frequently asked questions and their respective answers.
+
+ Q: Why isn't the plugin in Maven Central?
+
+ A: The plugin was developed to satisfy the needs of the MoTeCH project, and
+ isn't 'blessed' by the OpenMRS community at this time. The MoTeCH project
+ isn't syncing artifacts to repo1 currently, but it may happen some time in the
+ near future.

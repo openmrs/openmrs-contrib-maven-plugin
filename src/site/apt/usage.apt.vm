@@ -1,0 +1,40 @@
+ ---
+ Plugin Usage
+ ---
+ Brent Atkinson
+ ---
+ 2009-11-12
+
+Plugin Usage
+
+ The following instructions describe how to use the plugin in its most common
+ configuration. The following snippet in your pom should get you up and running.
+ Note that you set the project packaging to omod and enable extensions.
+
++---+
+<project ...>
+        ...
+        <packaging>omod</packaging>
+        ...
+        <plugins>
+                <plugin>
+                        <groupId>org.motech.openmrs.plugin</groupId>
+                        <artifactId>maven-openmrs-plugin</artifactId>
+                        <version>${project.version}</version>
+                        <extensions>true</extensions>
+                </plugin>
+        </plugins>
+</project>
++---+
+
+ With this configuration, simply put your java source files in src/main/java,
+ your resources like config.xml in src/main/resources and your web module files
+ in src/main/webapp. The plugin is setup to detect and configure itself to build
+ an omod archive and puts them in the proper places.
+
+ As you can see, the plugin relies on convention to make configuration easy. If
+ you want to override some of the plugin's behavior, check out
+ {{{plugin-info.html}how to configure}} it.
+
+ <<NOTE: If you have problems deploying modules in OpenMRS version before 1.5,
+ check out the {{{examples.html#Handling Empty Directories}following}}.>>

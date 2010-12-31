@@ -1,0 +1,38 @@
+ ---
+ Examples
+ ---
+ Brent Atkinson
+ ---
+ 2009-11-12
+
+Examples
+
+ Here we show more examples of using the openmrs plugin.
+
+*{Handling Empty Directories}
+
+ Due to a defect in versions of OpenMRS prior to 1.5.0, the web
+ portion of a module can fail to successfully deploy if certain directories
+ don't exist in the omod. For this reason, the verifier checks to see if all the
+ possible directories exist if the required version defined in the config.xml
+ file is undefined or is less than 1.5.0. If the verification fails, the build
+ fails.
+
+ While, this prevents building partially broken omods, it doesn't fix the
+ problem. By default, the maven-resources-plugin prunes empty subdirectories.
+ Due to this configuration, if you don't put any resources in the portlets
+ and/or the resources subdirectories, your module may deploy, but the web forms
+ may not. To configure the resources plugin to keep the empty directories, you
+ can use something like the following in your omod's pom.xml:
+
++---+
+<plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <configuration>
+                <includeEmptyDirs>true</includeEmptyDirs>
+        </configuration>
+</plugin>
++---+
+
+ For more details on the defect, see {{{http://dev.openmrs.org/ticket/1574}the
+ openmrs issue}} describing it.

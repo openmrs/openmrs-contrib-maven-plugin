@@ -1,0 +1,19 @@
+ ---
+ Introduction
+ ---
+ Brent Atkinson
+ ---
+ 2009-11-12
+
+
+Introduction
+
+ ${project.description}
+
+ For a description on how to run the plugin in its most common configuration,
+ see the {{{usage.html}usage}} section. For a description of the plugin's goals
+ and configuration parameters, see the {{{plugin-info.html}goals}} section. For
+ frequently asked questions and the answers, check out the {{{faq.html}FAQ}}
+ section. For more example configurations, check out the
+ {{{examples.html}examples}} section.
+
