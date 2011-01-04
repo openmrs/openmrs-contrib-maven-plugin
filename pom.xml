@@ -89,9 +89,9 @@
 	</dependencies>
 
 	<scm>
-		<url>http://svn.openmrs.org/openmrs-contrib/maven/plugins/maven-openmrs-plugin/trunk</url>
-		<connection>scm:svn:https://svn.openmrs.org/openmrs-contrib/maven/plugins/maven-openmrs-plugin/trunk</connection>
-		<developerConnection>scm:svn:https://svn.openmrs.org/openmrs-contrib/maven/plugins/maven-openmrs-plugin/trunk</developerConnection>
+		<url>http://svn.openmrs.org/openmrs-contrib/maven/plugins/maven-openmrs-plugin/branches/1.0.x</url>
+		<connection>scm:svn:https://svn.openmrs.org/openmrs-contrib/maven/plugins/maven-openmrs-plugin/branches/1.0.x</connection>
+		<developerConnection>scm:svn:https://svn.openmrs.org/openmrs-contrib/maven/plugins/maven-openmrs-plugin/branches/1.0.x</developerConnection>
 	</scm>
 
 	<profiles>
