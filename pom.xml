@@ -8,46 +8,7 @@
 	<description>
 		A maven plugin for generating OpenMRS compatible modules.
 	</description>
-	<url>http://motech.rcg.usm.maine.edu/redmine/projects/show/openmrs-plugin</url>
-
-	<developers>
-		<developer>
-			<id>batkinson</id>
-			<name>Brent Atkinson</name>
-			<timezone>-5</timezone>
-			<email>batkinson@usm.maine.edu</email>
-		</developer>
-		<developer>
-			<id>mblanch</id>
-			<name>Matt Blanchette</name>
-			<timezone>-5</timezone>
-			<email>matt.blanchette@gmail.com</email>
-		</developer>
-	</developers>
-
-	<ciManagement>
-		<system>continuum</system>
-		<url>http://motech.rcg.usm.maine.edu/continuum/</url>
-		<notifiers>
-			<notifier>
-				<type>mail</type>
-				<configuration>
-					<address>batkinson@usm.maine.edu</address>
-				</configuration>
-			</notifier>
-			<notifier>
-				<type>mail</type>
-				<configuration>
-					<address>matt.blanchette@gmail.com</address>
-				</configuration>
-			</notifier>
-		</notifiers>
-	</ciManagement>
-
-	<issueManagement>
-		<system>redmine</system>
-		<url>http://motech.rcg.usm.maine.edu/redmine/projects/openmrs-plugin/issues</url>
-	</issueManagement>
+	<url>https://wiki.openmrs.org/x/LREz</url>
 
 	<dependencies>
 		<dependency>
@@ -89,9 +50,9 @@
 	</dependencies>
 
 	<scm>
-		<url>http://svn.openmrs.org/openmrs-contrib/maven/plugins/maven-openmrs-plugin/trunk</url>
-		<connection>scm:svn:http://svn.openmrs.org/openmrs-contrib/maven/plugins/maven-openmrs-plugin/trunk</connection>
-		<developerConnection>scm:svn:http://svn.openmrs.org/openmrs-contrib/maven/plugins/maven-openmrs-plugin/trunk</developerConnection>
+		<url>https://github.com/openmrs/openmrs-contrib-maven-plugin.git</url>
+		<connection>scm:git:https://github.com/openmrs/openmrs-contrib-maven-plugin/</connection>
+		<developerConnection>scm:git:https://github.com/openmrs/openmrs-contrib-maven-plugin/</developerConnection>
 	</scm>
 
 	<profiles>
